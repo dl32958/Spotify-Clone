@@ -6,7 +6,8 @@ import { SessionContextProvider } from "@supabase/auth-helpers-react";
 
 import { Database} from "@/database.types";
 
-// provide supabase authentication context to the app and connect to the database
+// initialize to the database and provide the authentication/session context
+// SupabaseProvider hook is used to encapsulate the SessionContextProvider hook
 interface SupabaseProviderProps {
     children: React.ReactNode;
 };

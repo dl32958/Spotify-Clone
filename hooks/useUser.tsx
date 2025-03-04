@@ -20,6 +20,7 @@ export interface Props {
     [propName: string]: any;
 };
 
+// fetch userDetails and subscription info when the user is logged in
 export const MyUserContextProvider = (props: Props) => {
     const { session, isLoading: isLoadingUser, supabaseClient: supabase } = useSessionContext();
     const user = useSupaUser();
